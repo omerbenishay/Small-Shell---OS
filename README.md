@@ -1,6 +1,8 @@
 # Small-Shell---OS
 
 An implementaion of a "small shell". Written and tested in Ubuntu 18.04 LTS.
+To run it, you should run make in the terminal and then run the smash that created.
+
 Include the implementaion of:
 1. chprompt - allowing the user to change the prompt that being displayed
     Command format:
