@@ -12,7 +12,7 @@ using namespace std;
 
 #define EMPTY_JOB_ID 0
 #define NO_JOB 0
-enum JobStatus { STOPPED, FINISHED, BG_ACTIVE, FG_ACTIVE };//might be distructive
+enum JobStatus { STOPPED, FINISHED, BG_ACTIVE, FG_ACTIVE };
 
 class Command;
 time_t _getTime();
@@ -58,7 +58,6 @@ class JobsList {
   shared_ptr<JobEntry> getMaxJob() ;
   bool isJobRunning(int job);
   
-  // TODO: Add extra methods or modify exisitng ones as needed
 };
 
 class TimedJobsList {
