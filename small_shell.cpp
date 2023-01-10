@@ -40,7 +40,7 @@ SmallShell::SmallShell() {
   this->jobs_list = shared_ptr<JobsList>(new JobsList());
   this->is_running = true;
   this->timed_jobs = shared_ptr<TimedJobsList>(new TimedJobsList());
-// TODO: add your implementation
+
 }
 
 SmallShell::~SmallShell() {
@@ -183,9 +183,9 @@ void SmallShell::executeCommand(const string cmd_line) {
 
       }
   } catch (SyscallException &err) {
-      perror(err.what()); // TODO: check prints to stderr
+      perror(err.what());
   } catch (SmashException &err) {
-      cerr << err.what(); // TODO: check prints to stderr
+      cerr << err.what();
   }
 }
 
